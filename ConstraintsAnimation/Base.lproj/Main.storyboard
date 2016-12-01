@@ -18,9 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="wyk-t3-JQK" userLabel="Base Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wyk-t3-JQK" userLabel="Base Stack View">
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atQ-O7-rWG" userLabel="Cyan">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atQ-O7-rWG" userLabel="Cyan">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUG-zL-4an">
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -29,12 +29,12 @@
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TQb-JO-xvY" userLabel="Dimensions Stack View">
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sms-wc-wNe">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sms-wc-wNe" customClass="UICountingLabel">
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkK-53-iav">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkK-53-iav" customClass="UICountingLabel">
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -44,13 +44,14 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="161.75" id="0pG-T4-Cb6"/>
                                             <constraint firstItem="TQb-JO-xvY" firstAttribute="centerY" secondItem="atQ-O7-rWG" secondAttribute="centerY" id="5rO-DE-8m7"/>
                                             <constraint firstItem="xUG-zL-4an" firstAttribute="top" secondItem="atQ-O7-rWG" secondAttribute="top" constant="8" id="F5Z-Al-gWn"/>
                                             <constraint firstItem="xUG-zL-4an" firstAttribute="leading" secondItem="atQ-O7-rWG" secondAttribute="leading" constant="8" id="VBx-xY-4aK"/>
                                             <constraint firstItem="TQb-JO-xvY" firstAttribute="centerX" secondItem="atQ-O7-rWG" secondAttribute="centerX" id="uxA-Cc-1fp"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIg-Q5-QQh" userLabel="Magenta">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIg-Q5-QQh" userLabel="Magenta">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0z-k0-yRE">
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -59,12 +60,12 @@
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wQ7-5Q-V5d" userLabel="Dimensions Stack View">
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CV-bK-YY2">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CV-bK-YY2" customClass="UICountingLabel">
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4n-zz-hFe">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4n-zz-hFe" customClass="UICountingLabel">
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -75,12 +76,13 @@
                                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="wQ7-5Q-V5d" firstAttribute="centerY" secondItem="bIg-Q5-QQh" secondAttribute="centerY" id="15z-e8-ShY"/>
+                                            <constraint firstAttribute="height" constant="161.75" id="3oe-rq-kpT"/>
                                             <constraint firstItem="E0z-k0-yRE" firstAttribute="top" secondItem="bIg-Q5-QQh" secondAttribute="top" constant="8" id="DLw-bs-vCb"/>
                                             <constraint firstItem="wQ7-5Q-V5d" firstAttribute="centerX" secondItem="bIg-Q5-QQh" secondAttribute="centerX" id="Pmj-58-eD7"/>
                                             <constraint firstItem="E0z-k0-yRE" firstAttribute="leading" secondItem="bIg-Q5-QQh" secondAttribute="leading" constant="8" id="rKx-Oj-4DK"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6P-GS-rYI" userLabel="Yellow">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6P-GS-rYI" userLabel="Yellow">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yellow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNd-di-j3S">
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -89,12 +91,12 @@
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7i4-B9-AI3" userLabel="Dimensions Stack View">
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjR-V5-ts1">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjR-V5-ts1" customClass="UICountingLabel">
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4I-3r-0dy">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4I-3r-0dy" customClass="UICountingLabel">
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -108,9 +110,10 @@
                                             <constraint firstItem="VNd-di-j3S" firstAttribute="leading" secondItem="s6P-GS-rYI" secondAttribute="leading" constant="8" id="chm-Pc-s8u"/>
                                             <constraint firstItem="7i4-B9-AI3" firstAttribute="centerX" secondItem="s6P-GS-rYI" secondAttribute="centerX" id="laf-1o-4MK"/>
                                             <constraint firstItem="VNd-di-j3S" firstAttribute="top" secondItem="s6P-GS-rYI" secondAttribute="top" constant="8" id="vJ5-k5-iHN"/>
+                                            <constraint firstAttribute="height" constant="161.75" id="x8C-Il-8Tr"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bE-Ii-I4c" userLabel="Black">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bE-Ii-I4c" userLabel="Black">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uew-je-RcI">
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -119,12 +122,12 @@
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ltv-r4-G4c" userLabel="Dimensions Stack View">
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFz-Qi-VEq">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFz-Qi-VEq" customClass="UICountingLabel">
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZn-Ff-JyJ">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZn-Ff-JyJ" customClass="UICountingLabel">
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -134,6 +137,7 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="161.75" id="444-Sn-7FT"/>
                                             <constraint firstItem="ltv-r4-G4c" firstAttribute="centerX" secondItem="7bE-Ii-I4c" secondAttribute="centerX" id="RFT-y0-HSh"/>
                                             <constraint firstItem="uew-je-RcI" firstAttribute="leading" secondItem="7bE-Ii-I4c" secondAttribute="leading" constant="8" id="isd-Fq-O0t"/>
                                             <constraint firstItem="ltv-r4-G4c" firstAttribute="centerY" secondItem="7bE-Ii-I4c" secondAttribute="centerY" id="uWC-cD-3Ob"/>
@@ -145,16 +149,34 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wyk-t3-JQK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ahj-6R-TI1"/>
-                            <constraint firstAttribute="trailing" secondItem="wyk-t3-JQK" secondAttribute="trailing" id="RdC-qi-5C0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wyk-t3-JQK" secondAttribute="bottom" id="TuG-b0-VIk"/>
-                            <constraint firstItem="wyk-t3-JQK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ryf-SI-0dF"/>
+                            <constraint firstItem="wyk-t3-JQK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JEB-NR-4H8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wyk-t3-JQK" secondAttribute="bottom" id="M9f-zp-fFu"/>
+                            <constraint firstItem="wyk-t3-JQK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="N2f-K5-GE2"/>
+                            <constraint firstAttribute="trailing" secondItem="wyk-t3-JQK" secondAttribute="trailing" id="ouc-0u-7Zq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blackHeightLabel" destination="KZn-Ff-JyJ" id="JTc-Ti-TuU"/>
+                        <outlet property="blackView" destination="7bE-Ii-I4c" id="mF1-uW-XWs"/>
+                        <outlet property="blackViewHeightConstraint" destination="444-Sn-7FT" id="zqd-6a-GSk"/>
+                        <outlet property="blackWidthLabel" destination="zFz-Qi-VEq" id="kub-zb-qse"/>
+                        <outlet property="cyanHeightLabel" destination="wkK-53-iav" id="ddg-7A-3QL"/>
+                        <outlet property="cyanView" destination="atQ-O7-rWG" id="Xw7-I4-aEW"/>
+                        <outlet property="cyanViewHeightConstraint" destination="0pG-T4-Cb6" id="qg3-NS-j55"/>
+                        <outlet property="cyanWidthLabel" destination="sms-wc-wNe" id="0Nd-L1-yU0"/>
+                        <outlet property="magentaHeightLabel" destination="O4n-zz-hFe" id="a0i-ev-eOc"/>
+                        <outlet property="magentaView" destination="bIg-Q5-QQh" id="kRz-Rh-tmk"/>
+                        <outlet property="magentaViewHeightConstraint" destination="3oe-rq-kpT" id="gms-jD-ka4"/>
+                        <outlet property="magentaWidthLabel" destination="3CV-bK-YY2" id="Cbg-4X-YF4"/>
+                        <outlet property="yellowHeightLabel" destination="h4I-3r-0dy" id="6hH-ud-yn5"/>
+                        <outlet property="yellowView" destination="s6P-GS-rYI" id="HD5-4r-h1g"/>
+                        <outlet property="yellowViewHeightConstraint" destination="x8C-Il-8Tr" id="oXA-5p-3VI"/>
+                        <outlet property="yellowWidthLabel" destination="AjR-V5-ts1" id="MFh-n0-axI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="290" y="114"/>
+            <point key="canvasLocation" x="258" y="72"/>
         </scene>
     </scenes>
 </document>
